@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust | Explore the World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="#">✦ wanderlust.</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p>YOUR NEXT CHAPTER STARTS HERE</p>
+      <h1>The world is<br><em>waiting for you.</em></h1>
+      <p>Discover beautiful destinations, unforgettable adventures and experiences worth remembering.</p>
+      <a class="btn" href="#destinations">Explore destinations →</a>
+    </div>
+  </section>
+
+  <section class="section" id="destinations">
+    <p class="eyebrow">A WORLD OF POSSIBILITIES</p>
+    <h2>Find your <em>somewhere.</em></h2>
+    <p class="intro">Every destination has a story. Which one will become yours?</p>
+
+    <div class="search">
+      <input id="search" placeholder="Search destinations...">
+      <button onclick="searchPlaces()">Search</button>
+    </div>
+
+    <div class="destinations" id="places">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=700" alt="Bali">
+        <h3>Bali, Indonesia</h3>
+        <p>Temples, beaches and tropical beauty.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=700" alt="Swiss Alps">
+        <h3>Swiss Alps, Switzerland</h3>
+        <p>Mountain adventures and breathtaking views.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=700" alt="Santorini">
+        <h3>Santorini, Greece</h3>
+        <p>Beautiful sunsets and island charm.</p>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=700" alt="Maldives">
+        <h3>Maldives</h3>
+        <p>Turquoise waters and luxury escapes.</p>
+      </article>
+    </div>
+    <p id="noResults" hidden>No destinations found. Try another search.</p>
+  </section>
+
+  <section class="about" id="about">
+    <p class="eyebrow">THE WANDERLUST DIFFERENCE</p>
+    <h2>More than a trip.<br><em>A feeling.</em></h2>
+    <p>We believe travel is about discovering new places, meeting new people and collecting memories that last forever.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Where to <em>next?</em></h2>
+    <p>Tell us about your dream destination.</p>
+    <form id="contactForm">
+      <input required placeholder="Your name">
+      <input required type="email" placeholder="Your email">
+      <textarea placeholder="Tell us about your dream trip"></textarea>
+      <button class="btn" type="submit">Send enquiry →</button>
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <footer>© 2026 Wanderlust Travel. Explore more. Travel further.</footer>
+  <script src="script.js"></script>
+</body>
+</html>

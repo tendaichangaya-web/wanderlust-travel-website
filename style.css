@@ -1,0 +1,254 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f6f1;
+  color: #203632;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  background: white;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #203632;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #203632;
+  font-size: 14px;
+}
+
+.hero {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 8%;
+  color: white;
+  background:
+    linear-gradient(90deg, #142d29cc, #142d2940),
+    url("https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1600")
+    center/cover;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-content p:first-child,
+.eyebrow {
+  letter-spacing: 3px;
+  color: #d9785d;
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: 65px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+em {
+  color: #d9785d;
+}
+
+.hero-content > p:nth-of-type(2) {
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 22px;
+  background: #203632;
+  color: white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero .btn {
+  background: white;
+  color: #203632;
+}
+
+.section {
+  padding: 90px 8%;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 45px;
+  margin-bottom: 18px;
+}
+
+.intro {
+  color: #75817d;
+  margin-bottom: 30px;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.search input {
+  padding: 14px;
+  width: 280px;
+  border: 1px solid #ddd;
+}
+
+.search button {
+  padding: 14px 22px;
+  border: none;
+  background: #203632;
+  color: white;
+  cursor: pointer;
+}
+
+.destinations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 17px;
+  padding: 15px 12px 8px;
+}
+
+.card p {
+  color: #75817d;
+  font-size: 12px;
+  padding: 0 12px;
+  line-height: 1.6;
+}
+
+.about {
+  background: #eaece5;
+  padding: 90px 12%;
+  text-align: center;
+}
+
+.about p:last-child {
+  max-width: 550px;
+  margin: auto;
+  line-height: 1.9;
+  color: #75817d;
+}
+
+.contact {
+  background: #203632;
+  color: white;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 15px;
+  border: 1px solid #ffffff55;
+  background: transparent;
+  color: white;
+}
+
+.contact .btn {
+  background: #d9785d;
+}
+
+footer {
+  background: #172b27;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 850px) {
+  .destinations {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  nav {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: 550px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .destinations {
+    grid-template-columns: 1fr;
+  }
+
+  .search input {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .search {
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+}
